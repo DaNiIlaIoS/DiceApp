@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiceApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="9QS-ct-g9O">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="u2D-gI-PAu">
+                                <rect key="frame" x="20" y="109" width="353" height="548.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iXL-YG-6Ko">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="32.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTV-hy-bO0">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="32.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DiceApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JOD-ic-Rwv">
+                                                <rect key="frame" x="121" y="0.0" width="111" height="32.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8x-Ou-frk">
+                                                <rect key="frame" x="242" y="0.0" width="111" height="32.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vg-5v-Jp8">
+                                        <rect key="frame" x="0.0" y="112.33333333333334" width="353" height="74"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtY-fu-NQ3">
+                                                <rect key="frame" x="10" y="10" width="333" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="KbZ-Sg-ZpX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hhc-ib-4Cd">
+                                                <rect key="frame" x="10" y="59.999999999999972" width="333" height="4"/>
+                                                <color key="progressTintColor" red="0.023529411760000001" green="0.15686274510000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </progressView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Hhc-ib-4Cd" secondAttribute="bottom" constant="10" id="LMo-eh-9Ip"/>
+                                            <constraint firstItem="Hhc-ib-4Cd" firstAttribute="top" secondItem="ZtY-fu-NQ3" secondAttribute="bottom" constant="10" id="Qp5-vY-05J"/>
+                                            <constraint firstItem="ZtY-fu-NQ3" firstAttribute="leading" secondItem="8vg-5v-Jp8" secondAttribute="leading" constant="10" id="hO3-eX-Fa3"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZtY-fu-NQ3" secondAttribute="trailing" constant="10" id="i3s-pF-HqJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hhc-ib-4Cd" secondAttribute="trailing" constant="10" id="ifR-59-CsE"/>
+                                            <constraint firstItem="Hhc-ib-4Cd" firstAttribute="leading" secondItem="8vg-5v-Jp8" secondAttribute="leading" constant="10" id="mgf-C4-bPi"/>
+                                            <constraint firstItem="ZtY-fu-NQ3" firstAttribute="top" secondItem="8vg-5v-Jp8" secondAttribute="top" constant="10" id="vSd-ZE-hlR"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="gaV-ER-XmX">
+                                        <rect key="frame" x="0.0" y="266.33333333333331" width="353" height="156.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-3" translatesAutoresizingMaskIntoConstraints="NO" id="ki1-8d-tzI">
+                                                <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="156.66666666666666"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ki1-8d-tzI" secondAttribute="height" id="EMv-qZ-rUe"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-5" translatesAutoresizingMaskIntoConstraints="NO" id="vk2-sy-ivd">
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="156.33333333333337" height="156.66666666666666"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvu-yk-FVW">
+                                        <rect key="frame" x="0.0" y="502.99999999999994" width="353" height="45.333333333333314"/>
+                                        <color key="backgroundColor" red="0.37254901960784315" green="0.57647058823529407" blue="0.60392156862745094" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Бросить">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="diceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z1e-Nq-0Uv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9QS-ct-g9O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LGL-LD-Qbw"/>
+                            <constraint firstItem="9QS-ct-g9O" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MSH-Li-7wT"/>
+                            <constraint firstItem="u2D-gI-PAu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Ng0-2i-gfM"/>
+                            <constraint firstItem="u2D-gI-PAu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OwS-dQ-AeX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u2D-gI-PAu" secondAttribute="trailing" constant="20" id="c9B-yj-8m1"/>
+                            <constraint firstAttribute="bottom" secondItem="9QS-ct-g9O" secondAttribute="bottom" id="oeI-c8-78T"/>
+                            <constraint firstItem="9QS-ct-g9O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="psS-RV-13n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="computerScoreLabel" destination="c8x-Ou-frk" id="0dc-Hv-cZs"/>
+                        <outlet property="diceButton" destination="Wvu-yk-FVW" id="2hR-uA-STE"/>
+                        <outlet property="diceImageView1" destination="ki1-8d-tzI" id="T01-xD-THU"/>
+                        <outlet property="diceImageView2" destination="vk2-sy-ivd" id="h9W-mt-h4L"/>
+                        <outlet property="diceLabel" destination="JOD-ic-Rwv" id="msZ-Y4-CI3"/>
+                        <outlet property="myScoreLabel" destination="hTV-hy-bO0" id="geL-9h-Grc"/>
+                        <outlet property="progressView" destination="Hhc-ib-4Cd" id="dAj-jk-28P"/>
+                        <outlet property="timerLabel" destination="ZtY-fu-NQ3" id="6kc-oa-UsN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1320.289855072464" y="32.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="428" height="926"/>
+        <image name="dice-3" width="85.333335876464844" height="85.333335876464844"/>
+        <image name="dice-5" width="85.333335876464844" height="85.333335876464844"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

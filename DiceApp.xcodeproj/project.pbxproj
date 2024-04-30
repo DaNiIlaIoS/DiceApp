@@ -37,6 +37,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48AF0B0C2BDA46C500923B01 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				69C3B8D02619D1B500E67B5E /* AppDelegate.swift */,
+				69C3B8D22619D1B500E67B5E /* SceneDelegate.swift */,
+				69C3B8DB2619D1B600E67B5E /* LaunchScreen.storyboard */,
+				69C3B8DE2619D1B600E67B5E /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		48AF0B0D2BDA46CE00923B01 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69C3B8D42619D1B500E67B5E /* ViewController.swift */,
+				69C3B8D62619D1B500E67B5E /* Main.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48AF0B0E2BDA46D600923B01 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				69C3B8D92619D1B600E67B5E /* Assets.xcassets */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
 		69C3B8C42619D1B500E67B5E = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +84,9 @@
 		69C3B8CF2619D1B500E67B5E /* DiceApp */ = {
 			isa = PBXGroup;
 			children = (
-				69C3B8D02619D1B500E67B5E /* AppDelegate.swift */,
-				69C3B8D22619D1B500E67B5E /* SceneDelegate.swift */,
-				69C3B8D42619D1B500E67B5E /* ViewController.swift */,
-				69C3B8D62619D1B500E67B5E /* Main.storyboard */,
-				69C3B8D92619D1B600E67B5E /* Assets.xcassets */,
-				69C3B8DB2619D1B600E67B5E /* LaunchScreen.storyboard */,
-				69C3B8DE2619D1B600E67B5E /* Info.plist */,
+				48AF0B0C2BDA46C500923B01 /* App */,
+				48AF0B0D2BDA46CE00923B01 /* Controller */,
+				48AF0B0E2BDA46D600923B01 /* Resourse */,
 			);
 			path = DiceApp;
 			sourceTree = "<group>";
@@ -287,13 +311,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DiceApp/Info.plist;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TUPKULQZ9B;
+				INFOPLIST_FILE = DiceApp/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sivozelezov.DiceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,13 +336,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DiceApp/Info.plist;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TUPKULQZ9B;
+				INFOPLIST_FILE = DiceApp/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sivozelezov.DiceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
